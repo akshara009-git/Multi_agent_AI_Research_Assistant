@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "IBM Plex Sans", system-ui, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #faf6ee;
+}
+
+/* Tailwind's `font-sans` is used throughout the app; keep it on IBM Plex Sans */
+@theme {
+  --font-sans: "IBM Plex Sans", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
